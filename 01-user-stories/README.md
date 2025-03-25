@@ -105,6 +105,12 @@ Lista elementów z polami:
 
     📌 Przypisany do: Jan Kowalski
 
+## Przykładowy backlog
+
+Proces w Azure DevOps: `Agile`
+
+![Backlog](./backlog_azure_devops.png)
+
 ## Jak pisać dobre User Story?
 
 Zasada **INVEST** to świetna praktyka, która pomaga w tworzeniu dobrych User Stories w backlogu.
