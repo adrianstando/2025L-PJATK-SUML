@@ -1,0 +1,11 @@
+nav:
+    - Strona główna: README.md
+    - Materiały z zajęć:
+        - 01-user-stories
+        - 02-environment
+        - 03-neural-networks
+        - 04-docker
+        - 05-ci-cd
+        - 06-cloud
+        - 07-ml-tools
+        - 08-presentation

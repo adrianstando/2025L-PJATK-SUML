@@ -4,9 +4,9 @@
 
 Docker to narzędzie do tworzenia, dystrybucji i uruchamiania aplikacji w tzw. kontenerach. Kontener to lekka, przenośna jednostka, która zawiera aplikację wraz z całym jej środowiskiem – bibliotekami, zależnościami, systemem plików. Kontenery wraz z zawartością działają niezależnie od siebie i nie wiedzą o swoim istnieniu. Mogą się jednak ze sobą komunikować w ramach ściśle zdefiniowanych kanałów wymiany informacji. Konteneryzacja jest znacznie lżejszym sposobem uruchamiania aplikacji niż pełna wirtualizacja.
 
-Strona projektu: https://www.docker.com/
+Strona projektu: [https://www.docker.com/](https://www.docker.com/)
 
-Dokumentacja: https://docs.docker.com/
+Dokumentacja: [https://docs.docker.com/](https://docs.docker.com/)
 
 ## Różne sposoby wirtualizacji
 
@@ -149,14 +149,14 @@ Przykładowe rejestry:
 
 | Rodzaj | Opis |
 |--------|------|
-| Docker Hub | domyślne publiczne registry Dockera (https://hub.docker.com) |
+| Docker Hub | domyślne publiczne registry Dockera ([https://hub.docker.com](https://hub.docker.com)) |
 | Azure Container Registry (ACR) | prywatne registry w chmurze Microsoft Azure |
 | GitHub Container Registry (GHCR) | obrazy hostowane na GitHubie (ghcr.io) |
 | Self-hosted Registry | możesz postawić własne registry (registry:2 jako kontener!) |
 
-Python na Docker Hub: https://hub.docker.com/_/python
+Python na Docker Hub: [https://hub.docker.com/_/python](https://hub.docker.com/_/python)
 
-Tutorial o kontenerach na Azure: https://learn.microsoft.com/en-us/training/paths/az-204-implement-iaas-solutions/
+Tutorial o kontenerach na Azure: [https://learn.microsoft.com/en-us/training/paths/az-204-implement-iaas-solutions/](https://learn.microsoft.com/en-us/training/paths/az-204-implement-iaas-solutions/)
 
 ## Dodatkowe narzędzia
 
@@ -178,11 +178,11 @@ Tutorial o kontenerach na Azure: https://learn.microsoft.com/en-us/training/path
 
   Przydatne komendy:
   ```
-  docker swarm init                  # uruchomienie trybu Swarm
-  docker node ls                     # lista węzłów w klastrze
-  docker service create nginx        # uruchomienie usługi
-  docker swarm join-token worker     # generowanie tokena, który umożliwia podłączenie się workerów
-  docker swarm join --token <token> 192.168.1.100:2377 # podłączenie workera do maszyny master
+  docker swarm init                                     # uruchomienie trybu Swarm
+  docker node ls                                        # lista węzłów w klastrze
+  docker service create nginx                           # uruchomienie usługi
+  docker swarm join-token worker                        # generowanie tokena, który umożliwia podłączenie się workerów
+  docker swarm join --token <token> 192.168.1.100:2377  # podłączenie workera do maszyny master
   ```
 
 3. Kubernetes
@@ -194,44 +194,20 @@ Tutorial o kontenerach na Azure: https://learn.microsoft.com/en-us/training/path
 
   Przydatne komendy:
   ```
-  kubectl apply -f app.yaml       # uruchomienie aplikacji
-  kubectl get pods                # sprawdzenie uruchomionych podów
-  kubectl delete pod my-pod       # usunięcie poda
-  kubeadm init                    # stworzenie node'a master
-  kubeadm token create --print-join-command # generowanie tokeny na masterze
+  kubectl apply -f app.yaml                                                      # uruchomienie aplikacji
+  kubectl get pods                                                               # sprawdzenie uruchomionych podów
+  kubectl delete pod my-pod                                                      # usunięcie poda
+  kubeadm init                                                                   # stworzenie node'a master
+  kubeadm token create --print-join-command                                      # generowanie tokeny na masterze
   kubeadm join 192.168.1.100:6443 --token ... --discovery-token-ca-cert-hash ... # podłączenie workera do mastera
-  kubectl get nodes               # wylistowanie node'ów
+  kubectl get nodes                                                              # wylistowanie node'ów
   ```
 
 
 ## Rejestracja do darmowego dostępu do Azure dla studentów
 
-https://azure.microsoft.com/en-us/free/students/?WT.mc_id=academic-0000-cxa
+[https://azure.microsoft.com/en-us/free/students/?WT.mc_id=academic-0000-cxa](https://azure.microsoft.com/en-us/free/students/?WT.mc_id=academic-0000-cxa)
 
 ## Program do zarządzania dockerem
 
-Portainer (https://hub.docker.com/r/portainer/portainer-ce) jest platformą, która pozwala na zarządzanie lokalną instancją dockera i wszystkimi jej elementami.
-
-## Zadanie 
-
-Przygotuj system trzech kontenerów w architekturze MVC (model-view-controler) połączonych w sieci Docker i uruchamianych przy pomocy `docker compose`. Początkowa struktura systemu znajduje się w folderze `mvc-task` w repozytorium.
-
-System składa się z następujących elementów:
-* model (baza danych) - obraz do ściągnięcia z Docker Hub; możliwość skorzystania z dowolnie wybranej bazy danych; w początkowej propozycji jest PostgreSQL (ale można ją zamienić na dowolną inną) oraz skrypt tworzący bazę danych `user_db` i jedną tabelę `people` z dostępem dla użytkownika `admin` i hasłem `password`.
-* controler (kontroler) - serwer REST API z jednym endpointem do tworzenia nowych rekordów w bazie danych; początkowy schemat aplikacji jest napisany w Pythonie przy pomocy bilbioteki FastAPI; możecie użyć dowolnego języka: jedynym warunkiem jest to, że ma być co najmniej jeden endpoint do tworzenia nowych rekordów w bazie danych, która leży w oddzielnym kontenerze.
-* view (widok) - prosta strona WWW wyświetlająca dane z bazy danych; poczatkowy schemat aplikacji proponuje użycie Pythona i biblioteki streamlit, ale nie jest to obowiązkowe; może to być dowolny język i dowolny pakiet.
-
-Model działania:
-1. Wstawiamy dane poprzez API (kontroler) do bazy danych, np. poprzez `curl -X 'POST' 'http://localhost:8000/people' -H 'Content-Type: application/json' -d '{"name": "Jan","surname": "Kowalski","position": "Intern","salary": 3000.00}'`
-2. Dane lądują w bazie danych.
-3. Tabelę z bazy danych (wszystkie dane) można zobaczyć w postaci tabeli w aplikacji webowej frontend.
-
-UWAGA: Login i hasło do bazy danych muszą być podane jako zmienne środowiskowe (nie mogą być hard-codowane w kodzie aplikacji!).
-
-UWAGA: W tym systemie dwa kontenery muszą być zbudowane poprzez Dockerfile: controler (api) oraz view (widok/frontend). Można je budować korzystając z sekcji `build` w pliku `docker-compose.yaml` (wtedy kontenery będą zbudowane w momencie uruchamiania `docker compose up`).
-
-Całość ma być uruchamiana skryptem `docker-compose.yaml`.
-
-Do przesłania:
-* spakowany folder ze wszystkimi plikami i folderami (`docker-compose.yaml`, foldery `api`, `db`, `frontend`)
-* screenshot frontendu, gdzie widoczne są dane w formie tabelki (Uwaga! Na zrzucie ekranu powinny być więcej niż dwa domyślne rekordy!)
+Portainer [https://hub.docker.com/r/portainer/portainer-ce](https://hub.docker.com/r/portainer/portainer-ce) jest platformą, która pozwala na zarządzanie lokalną instancją dockera i wszystkimi jej elementami.

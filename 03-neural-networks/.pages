@@ -1,0 +1,7 @@
+title: Zajęcia 03 - Sieci neuronowe
+nav:
+    - Sieci neuronowe: README.md
+    - Materiały:
+        - Przykład: mnist-10
+        - Praca domowa: homework.md
+        - Zadanie dodatkowe: extra.md

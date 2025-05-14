@@ -15,22 +15,26 @@
 ![CI/CD (źródło: https://www.geeksforgeeks.org/what-is-ci-cd/)](./img/cd.png)
 
 🔧 Continuous Integration (CI)
+
 * Programiści często integrują kod do wspólnego repozytorium (np. GitHub).
 * Każdy commit uruchamia pipeline: budowanie, testy jednostkowe, analiza jakości (np. SonarQube).
 * Celem jest szybkie wykrycie i naprawienie błędów.
 
 🚀 Continuous Delivery (CD)
+
 * Kod po testach trafia automatycznie na środowisko staging (zwykle podobne do produkcji).
 * Dalsze testy (np. testy obciążeniowe).
 * Gotowość do wypuszczenia na produkcję w każdej chwili, z ręcznym "zatwierdzeniem".
 
 🤖 Continuous Deployment
+
 * Każda zmiana, która przejdzie przez pipeline testów, trafia automatycznie na produkcyjne środowisko.
 * Brak "manualnego zatwierdzenia" → potrzebne 100% zaufanie do testów automatycznych.
 
 ## Czym *w praktyce* jest CI/CD?
 
 CI/CD to po prostu lista kroków (instrukcji), które komputer automatycznie wykonuje, np.:
+
 1. 📥 Pobierz kod z repozytorium
 2. 🛠 Zainstaluj zależności
 3. 🐳 Zbuduj obraz Dockera

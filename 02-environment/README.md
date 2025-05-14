@@ -42,7 +42,7 @@ Np. jeśli sprint trwa 2 tygodnie, a programista może średnio ukończyć 10 SP
 
 ### Sprint – jak wygląda praca w Scrum?
 
-![Scrum framework (źródło: www.scrum-institute.org)](./scrum_framework_overview.jpg)
+![Scrum framework (źródło: www.scrum-institute.org)](./img/scrum_framework_overview.jpg)
 
 Sprint to ustalony czas (np. 1-2 tygodnie), w którym zespół realizuje zaplanowane zadania.
 
@@ -62,7 +62,7 @@ Przebieg sprintu:
 
 * Sprint Retrospective – analiza, co poszło dobrze, a co można poprawić.
 
-![Proces Scrum (źródło: www.scrum-institute.org)](./scrum.jpg)
+![Proces Scrum (źródło: www.scrum-institute.org)](./img/scrum.jpg)
 
 ### Role w Scrum
 
@@ -203,7 +203,7 @@ Przykład:
 numpy==1.23.0
 pandas>=1.5,<2.0
 scikit-learn
-````
+```
 
 ##### environment.yml (conda)
 
@@ -256,21 +256,4 @@ conda install tensorflow --dry-run
 
 * Przykładowa aplikacja znajduje się w folderze `sentiment_analysis`.
 
-* Dokumentacja pakietu, elementów oraz przykładowe aplikacje dostępne na: https://docs.streamlit.io/
-
-### Zadanie
-
-Stwórz aplikację w Streamlit do tłumaczenia zdań z angielskiego na francuski.
-
-1. Stwórz wirtualne środowisko korzystając z `venv` lub `conda`.
-
-2. Przygotuj skrypt `app.py`. Skorzystaj z modelu `Helsinki-NLP/opus-mt-en-fr`.
-
-    ```python
-    translator = pipeline("translation_en_to_fr", model="Helsinki-NLP/opus-mt-en-fr")
-    result = translator("Hello, how are you?")
-    ```
-
-    🚨 UWAGA! 🚨
-
-    Do poprawnego działania wymagana jest instalacja biblioteki `sentencepiece`
+* Dokumentacja pakietu, elementów oraz przykładowe aplikacje dostępne na: [https://docs.streamlit.io/](https://docs.streamlit.io/)

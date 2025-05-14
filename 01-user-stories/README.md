@@ -9,6 +9,7 @@ Backlog to lista wszystkich funkcjonalności, zadań i usprawnień, które mają
 W Azure DevOps backlog to po prostu zbiór Work Items (Epic, Feature, User Story, Task), które opisują wymagania i prace do wykonania w projekcie.
 
 Backlog można podzielić na dwa poziomy:
+
 * Product Backlog – wszystkie wymagania dla całego produktu (długoterminowe).
 * Sprint Backlog – zestaw zadań wybranych do realizacji w jednym sprincie (krótkoterminowe).
 
@@ -23,6 +24,7 @@ Backlog można podzielić na dwa poziomy:
 ### Backlog na podstawie Azure DevOps
 
 Lista elementów z polami:
+
 - Typ (Epis, Feature, User story, Task)
 - Tytuł
 - Opis
@@ -109,7 +111,7 @@ Lista elementów z polami:
 
 Proces w Azure DevOps: `Agile`
 
-![Backlog](./backlog_azure_devops.png)
+![Backlog](./img/backlog_azure_devops.png)
 
 ## Jak pisać dobre User Story?
 

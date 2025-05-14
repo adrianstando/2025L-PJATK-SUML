@@ -1,0 +1,4 @@
+title: Przykład
+nav:
+    - Notatnik: notebook.ipynb
+    - Aplikacja: app_md.md

@@ -21,7 +21,9 @@ Celem zadania jest przygotowanie działającej aplikacji z interfejsem użytkown
     * Uzupełnijcie plik README.md w repozytorium kodu o najnowszą instrukcję uruchomienia aplikacji oraz opis modelu AI.
 
 📤 Elementy do przesłania:
+
 * Zrzut ekranu aplikacji działającej lokalnie – na zrzucie ekranu powinno być widoczne, jak kliknięcie przycisku powoduje wysłanie zapytania do modelu i wyświetlenie odpowiedzi.
 
 🎙️ Elementy do pokazania na zajęciach:
+
 * Działająca aplikacja, która uruchamia się lokalnie i pokazuje interakcję użytkownika z modelem AI.

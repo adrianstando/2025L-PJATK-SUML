@@ -22,11 +22,13 @@ Celem tego zadania jest przygotowanie prezentacji podsumowującej projekt. Zesp�
     * Za zadanie pytania przyznawany będzie 1 punkt dodatkowy (max 1 punkt z 1 prezentacji dla 1 osoby).
 
 📤 Elementy do przesłania:
+
 * Plik prezentacji (PDF lub PowerPoint).
 * Nagranie demo aplikacji.
 * Link do działającej aplikacji (w chmurze).
 
 🎙️ Elementy do pokazania na zajęciach:
+
 * Prezentacja w formie slajdów na żywo.
 * Live demo aplikacji lub nagranie wideo z demonstracją.
 * Odpowiedzi na pytania zespołu.

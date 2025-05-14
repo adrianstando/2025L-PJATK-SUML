@@ -90,7 +90,7 @@ Dla problemów klasyfikacyjnych często stosuje się:
 
   $L = - \sum_{i=1}^{N} \sum_{j=1}^{K} y_{ij} \log(\hat{y}_{ij})$
 
-Wizualizacja uczenia sieci neuronowej: https://playground.tensorflow.org/
+Wizualizacja uczenia sieci neuronowej: [https://playground.tensorflow.org/](https://playground.tensorflow.org/)
 
 -----
 
@@ -133,22 +133,8 @@ $$ P(x, y) = \max_{(i,j) \in R} I(i,j) $$
 
 CNN składają się zazwyczaj z naprzemiennych warstw konwolucyjnych, poolingowych i w pełni połączonych.
 
-Wizualizacja działania sieci konwolucyjnej: https://poloclub.github.io/cnn-explainer/
+Wizualizacja działania sieci konwolucyjnej: [https://poloclub.github.io/cnn-explainer/](https://poloclub.github.io/cnn-explainer/)
 
 ## Przykładowa architektura sieci konwolucyjnej (LeNet)
 
 ![LeNet (źródło: https://www.mdpi.com/2076-3417/11/23/11185)](./img/lenet.png)
-
-# Zadanie
-
-1. Wytrenuj własną konwolucyjną sieć neuronową na zbiorze danych CIFAR-10. Szczegóły są przedstawione w notatniku `./cifar10/notebook.ipyb`. 
-
-2. Wykonaj wszystkie punkty zapisane w komentarzu na końcu notatnika.
-
-3. Warunkiem koniecznym do zaliczenia zadania jest accuracy na zbiorze treningowym, walidacyjnym oraz testowym co najmniej 60%.
-
-4. Znajdź 10 obrazków w Internecie (lub użyj własnych) i dokonaj klasyfikacji obiektów na niej.
-
-5. Przygotuj aplikację UI w gradio lub streamlit dla tego modelu.
-
-6. Prześlij notatnik, kod aplikacji oraz zrzuty ekranu działającej aplikacji.

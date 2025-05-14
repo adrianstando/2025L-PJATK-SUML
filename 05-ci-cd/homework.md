@@ -17,7 +17,7 @@ Celem zadania jest skonfigurowanie procesu CI/CD dla aplikacji. Zadanie składa 
         * Pipeline uruchamia się automatycznie przy otwarciu Pull Request do gałęzi main.
         * Sprawdzana jest jakość kodu przy pomocu automatycznych narzędzi.
         * Celem jest, aby kod był czysty, spójny i utrzymywalny.
-        * Pipeline powinien korzystać z framework'u `pre-commit` (https://pre-commit.com/) i wykorzystywać co najmniej 5 narzędzi, np.:
+        * Pipeline powinien korzystać z framework'u `pre-commit` ([https://pre-commit.com/](https://pre-commit.com/)) i wykorzystywać co najmniej 5 narzędzi, np.:
             * black – formatowanie kodu zgodnie z PEP8.
             * flake8 – analiza stylu i błędów.
             * isort – uporządkowanie importów.
@@ -33,7 +33,7 @@ Celem zadania jest skonfigurowanie procesu CI/CD dla aplikacji. Zadanie składa 
         * Pipeline uruchamia się automatycznie przy otwarciu Pull Request do gałęzi main.
         * Narzędzie do skanowania podatności w kodzie, zależnościach, kontenerze.
         * Cel: zapewnienie bezpieczeństwa na poziomie kodu i zależności.
-        * Przykład narzędzia: `trivy` (https://github.com/aquasecurity/trivy).
+        * Przykład narzędzia: `trivy` ([https://github.com/aquasecurity/trivy](https://github.com/aquasecurity/trivy)).
         * Pipeline ma się nie kończyć sukcesem, jeśli występują podatności typu HIGH lub CRITICAL – należy je rozwiązać, a nie wyciszać.
     4. Infrastructure as a Code (IaC):
         * Tworzenie infrastruktury w chmurze (Azure/AWS/GCP) przy pomocy pipeline'u i narzędzia typu Terraform.
@@ -42,9 +42,11 @@ Celem zadania jest skonfigurowanie procesu CI/CD dla aplikacji. Zadanie składa 
         * Pipeline IaC powinien wywoływać się po każdej aktualizacji (merge/commit) do gałęzi main.
 
 📤 Elementy do przesłania:
+
 * Link do obrazu Dockera w wybranym rejestrze obrazów.
 * Zrzuty ekranu z działającymi pipeline'ami (zielone statusy!).
 
 🎙️ Elementy do pokazania na zajęciach:
+
 * Widok opublikowanego obrazu Dockera.
 * Zielone statusy pipeline'ów.
