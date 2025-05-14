@@ -33,7 +33,7 @@ W trakcie zajęć będą przedstawiane nowe technologie wraz z prostymi przykła
 | 05.04. | 3           | Interfejs użytkownika dla aplikacji ML | - Tworzenie aplikacji w Streamlit/Gradio na podstawie własnego modelu klasyfikacji obrazów | **Działająca pierwsza wersja aplikacji (Streamlit/Gradio)** |
 | 26.04. | 4           | Docker | - Wprowadzenie do Dockera: pisanie Dockerfile, uruchamianie aplikacji w kontenerze | **Podłączenie modelu AI do aplikacji** |
 | 17.05. | 5           | CI/CD | - Wprowadzenie do CI/CD <br> - Konfiguracja GitHub Actions | **Konteneryzcja aplikacji (docker)** |
-| 31.05. | 6           | Uruchamianie aplikacji w chmurze | - Uruchamianie przykładowej aplikacji (kontenera) na Azure | **Stworzenie pipeline'u CI/CD** |
+| 31.05. | 6           | Uruchamianie aplikacji w chmurze | - Uruchamianie przykładowej aplikacji (kontenera) na Azure | **Stworzenie pipeline'ów CI/CD** |
 | 14.06. | 7           | Narzędzia ML | - Wprowadzenie do MLFlow <br> - Narzędzia AutoML w Pythonie  | **Aplikacja działająca w środowisku chmurowym** |
 | 28.06. | 8           | Prezentacje i ocena | - Prezentacja projektów, ocena i feedback | **Prezentacja** |
 
