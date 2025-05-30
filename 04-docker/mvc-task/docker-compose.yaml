@@ -1,0 +1,44 @@
+services:
+  db:
+    image: postgres:15
+    container_name: database # nazwa kontenera, która jest także adresem, po którym łączy się do bazy danych wewnątrz sieci default_network
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - default_network
+
+  api:
+    # dokończ konfigurację, możesz skorzystać z pliku Dockerfile i sekcji build w tym pliku
+    # build: <path>
+    # użyj sekcji port, aby wystawić porty
+    environment:
+      DB_ADDRESS: database
+      DB_USER: admin
+      DB_PASSWORD: password
+      DB_DATABASE: user_db
+      DB_TABLE: people
+    networks:
+      - default_network
+
+  frontend:
+    # dokończ konfigurację, możesz skorzystać z pliku Dockerfile i sekcji build w tym pliku
+    # build: <path>
+    # użyj sekcji port, aby wystawić porty
+    environment:
+      DB_ADDRESS: database
+      DB_USER: admin
+      DB_PASSWORD: password
+      DB_DATABASE: user_db
+      DB_TABLE: people
+    networks:
+      - default_network
+
+networks:
+  default_network:
+
+volumes:
+  db_data:

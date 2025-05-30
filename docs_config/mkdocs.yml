@@ -1,0 +1,64 @@
+site_name: SUML-PJATK 2025L
+docs_dir: ../
+site_dir: ../../site
+repo_url: https://github.com/adrianstando/2025L-PJATK-SUML/tree/main
+theme:
+  language: pl
+  name: material
+  palette:
+    - media: "(prefers-color-scheme)"
+      primary: blue
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.sections
+    - navigation.tracking
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.footer
+    - content.code.select
+    - content.code.annotate
+    - content.code.copy
+  icon:
+    logo: fontawesome/solid/users-gear
+plugins:
+  - search
+  - awesome-pages
+  - mkdocs-jupyter
+  - include-markdown
+markdown_extensions:
+  - admonition
+  - md_in_html
+  - tables
+  - mdx_math
+  - codehilite
+  - pymdownx.blocks.caption
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: ../
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.arithmatex
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+copyright: Copyright &copy; 2025 Adrian Stańdo
