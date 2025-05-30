@@ -173,6 +173,9 @@ Wady:
 Linki:
 
 * [Materiały treningowe Microsoft Azure](https://learn.microsoft.com/en-us/)
+* [Materiały treningowe Azure Container Registry & Azure App Service](https://learn.microsoft.com/en-us/training/paths/architect-modern-apps/)
+* [Materiały treningowe Azure Container Registry & Azure App Service](https://learn.microsoft.com/en-us/training/paths/deploy-cloud-native-applications-to-azure-container-apps/)
+* [CI/CD dla Azure Web App (container)](https://learn.microsoft.com/en-us/azure/app-service/deploy-ci-cd-custom-container?tabs=acr&pivots=container-linux)
 * [Tutorial Azure Container App](https://medium.com/@radha.sable25/how-to-use-azure-container-app-service-for-efficient-app-deployment-a-devops-guide-2633a83af6e4)
 * [Python i Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-python?tabs=connection-string%2Croles-azure-portal%2Csign-in-azure-cli&pivots=blob-storage-quickstart-scratch)
 

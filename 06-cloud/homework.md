@@ -29,7 +29,7 @@ Celem tego zadania jest uruchomienie aplikacji w środowisku chmurowym (Azure, A
 4. Infrastruktura chmurowa:
 
     * Aplikacja webowa (usługa hostująca kontener).
-    * Storage bucket (do zapisów danych).
+    * Storage bucket / baza danych (do zapisów danych).
 
 5. CI/CD – wymagania:
 
