@@ -1,0 +1,2567 @@
+
+<!doctype html>
+<html lang="pl" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../01-user-stories/homework/">
+      
+      
+        <link rel="next" href="example/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Środowisko - SUML-PJATK 2025L</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#srodowisko-programistyczne" class="md-skip">
+          Przejdź do treści
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Nagłówek">
+    <a href=".." title="SUML-PJATK 2025L" class="md-header__button md-logo" aria-label="SUML-PJATK 2025L" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M144 160a80 80 0 1 0 0-160 80 80 0 1 0 0 160m368 0a80 80 0 1 0 0-160 80 80 0 1 0 0 160M0 298.7C0 310.4 9.6 320 21.3 320h214c-26.6-23.5-43.3-57.8-43.3-96 0-7.6.7-15 1.9-22.3-13.6-6.3-28.7-9.7-44.6-9.7h-42.7C47.8 192 0 239.8 0 298.7M320 320c24 0 45.9-8.8 62.7-23.3 2.5-3.7 5.2-7.3 8-10.7 2.7-3.3 5.7-6.1 9-8.3C410 262.3 416 243.9 416 224c0-53-43-96-96-96s-96 43-96 96 43 96 96 96m65.4 60.2c-10.3-5.9-18.1-16.2-20.8-28.2H261.4C187.7 352 128 411.7 128 485.3c0 14.7 11.9 26.7 26.7 26.7h300.6c-2.1-5.2-3.2-10.9-3.2-16.4v-3c-1.3-.7-2.7-1.5-4-2.3l-2.6 1.5c-16.8 9.7-40.5 8-54.7-9.7-4.5-5.6-8.6-11.5-12.4-17.6l-.1-.2-.1-.2-2.4-4.1-.1-.2-.1-.2c-3.4-6.2-6.4-12.6-9-19.3-8.2-21.2 2.2-42.6 19-52.3l2.7-1.5v-4.6l-2.7-1.5zM533.3 192h-42.7c-15.9 0-31 3.5-44.6 9.7 1.3 7.2 1.9 14.7 1.9 22.3 0 17.4-3.5 33.9-9.7 49 2.5.9 4.9 2 7.1 3.3l2.6 1.5c1.3-.8 2.6-1.6 4-2.3v-3c0-19.4 13.3-39.1 35.8-42.6 7.9-1.2 16-1.9 24.2-1.9s16.3.6 24.2 1.9c22.5 3.5 35.8 23.2 35.8 42.6v3c1.3.7 2.7 1.5 4 2.3l2.6-1.5c16.8-9.7 40.5-8 54.7 9.7 2.3 2.8 4.5 5.8 6.6 8.7-2.1-57.1-49-102.7-106.6-102.7zm91.3 163.9c6.3-3.6 9.5-11.1 6.8-18-2.1-5.5-4.6-10.8-7.4-15.9l-2.3-4c-3.1-5.1-6.5-9.9-10.2-14.5-4.6-5.7-12.7-6.7-19-3l-2.9 1.7c-9.2 5.3-20.4 4-29.6-1.3s-16.1-14.5-16.1-25.1v-3.4c0-7.3-4.9-13.8-12.1-14.9-6.5-1-13.1-1.5-19.9-1.5s-13.4.5-19.9 1.5c-7.2 1.1-12.1 7.6-12.1 14.9v3.4c0 10.6-6.9 19.8-16.1 25.1s-20.4 6.6-29.6 1.3l-2.9-1.7c-6.3-3.6-14.4-2.6-19 3-3.7 4.6-7.1 9.5-10.2 14.6l-2.3 3.9c-2.8 5.1-5.3 10.4-7.4 15.9-2.6 6.8.5 14.3 6.8 17.9l2.9 1.7c9.2 5.3 13.7 15.8 13.7 26.4s-4.5 21.1-13.7 26.4l-3 1.7c-6.3 3.6-9.5 11.1-6.8 17.9 2.1 5.5 4.6 10.7 7.4 15.8l2.4 4.1c3 5.1 6.4 9.9 10.1 14.5 4.6 5.7 12.7 6.7 19 3l2.9-1.7c9.2-5.3 20.4-4 29.6 1.3s16.1 14.5 16.1 25.1v3.4c0 7.3 4.9 13.8 12.1 14.9 6.5 1 13.1 1.5 19.9 1.5s13.4-.5 19.9-1.5c7.2-1.1 12.1-7.6 12.1-14.9V492c0-10.6 6.9-19.8 16.1-25.1s20.4-6.6 29.6-1.3l2.9 1.7c6.3 3.6 14.4 2.6 19-3 3.7-4.6 7.1-9.4 10.1-14.5l2.4-4.2c2.8-5.1 5.3-10.3 7.4-15.8 2.6-6.8-.5-14.3-6.8-17.9l-3-1.7c-9.2-5.3-13.7-15.8-13.7-26.4s4.5-21.1 13.7-26.4l3-1.7zM472 384a40 40 0 1 1 80 0 40 40 0 1 1-80 0"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SUML-PJATK 2025L
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Środowisko
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Szukaj" placeholder="Szukaj" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Szukaj">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Wyczyść" aria-label="Wyczyść" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicjowanie wyszukiwania
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/adrianstando/2025L-PJATK-SUML/tree/main" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Zakładki" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Strona główna
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01-user-stories/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Materiały z zajęć
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Nawigacja" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="SUML-PJATK 2025L" class="md-nav__button md-logo" aria-label="SUML-PJATK 2025L" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M144 160a80 80 0 1 0 0-160 80 80 0 1 0 0 160m368 0a80 80 0 1 0 0-160 80 80 0 1 0 0 160M0 298.7C0 310.4 9.6 320 21.3 320h214c-26.6-23.5-43.3-57.8-43.3-96 0-7.6.7-15 1.9-22.3-13.6-6.3-28.7-9.7-44.6-9.7h-42.7C47.8 192 0 239.8 0 298.7M320 320c24 0 45.9-8.8 62.7-23.3 2.5-3.7 5.2-7.3 8-10.7 2.7-3.3 5.7-6.1 9-8.3C410 262.3 416 243.9 416 224c0-53-43-96-96-96s-96 43-96 96 43 96 96 96m65.4 60.2c-10.3-5.9-18.1-16.2-20.8-28.2H261.4C187.7 352 128 411.7 128 485.3c0 14.7 11.9 26.7 26.7 26.7h300.6c-2.1-5.2-3.2-10.9-3.2-16.4v-3c-1.3-.7-2.7-1.5-4-2.3l-2.6 1.5c-16.8 9.7-40.5 8-54.7-9.7-4.5-5.6-8.6-11.5-12.4-17.6l-.1-.2-.1-.2-2.4-4.1-.1-.2-.1-.2c-3.4-6.2-6.4-12.6-9-19.3-8.2-21.2 2.2-42.6 19-52.3l2.7-1.5v-4.6l-2.7-1.5zM533.3 192h-42.7c-15.9 0-31 3.5-44.6 9.7 1.3 7.2 1.9 14.7 1.9 22.3 0 17.4-3.5 33.9-9.7 49 2.5.9 4.9 2 7.1 3.3l2.6 1.5c1.3-.8 2.6-1.6 4-2.3v-3c0-19.4 13.3-39.1 35.8-42.6 7.9-1.2 16-1.9 24.2-1.9s16.3.6 24.2 1.9c22.5 3.5 35.8 23.2 35.8 42.6v3c1.3.7 2.7 1.5 4 2.3l2.6-1.5c16.8-9.7 40.5-8 54.7 9.7 2.3 2.8 4.5 5.8 6.6 8.7-2.1-57.1-49-102.7-106.6-102.7zm91.3 163.9c6.3-3.6 9.5-11.1 6.8-18-2.1-5.5-4.6-10.8-7.4-15.9l-2.3-4c-3.1-5.1-6.5-9.9-10.2-14.5-4.6-5.7-12.7-6.7-19-3l-2.9 1.7c-9.2 5.3-20.4 4-29.6-1.3s-16.1-14.5-16.1-25.1v-3.4c0-7.3-4.9-13.8-12.1-14.9-6.5-1-13.1-1.5-19.9-1.5s-13.4.5-19.9 1.5c-7.2 1.1-12.1 7.6-12.1 14.9v3.4c0 10.6-6.9 19.8-16.1 25.1s-20.4 6.6-29.6 1.3l-2.9-1.7c-6.3-3.6-14.4-2.6-19 3-3.7 4.6-7.1 9.5-10.2 14.6l-2.3 3.9c-2.8 5.1-5.3 10.4-7.4 15.9-2.6 6.8.5 14.3 6.8 17.9l2.9 1.7c9.2 5.3 13.7 15.8 13.7 26.4s-4.5 21.1-13.7 26.4l-3 1.7c-6.3 3.6-9.5 11.1-6.8 17.9 2.1 5.5 4.6 10.7 7.4 15.8l2.4 4.1c3 5.1 6.4 9.9 10.1 14.5 4.6 5.7 12.7 6.7 19 3l2.9-1.7c9.2-5.3 20.4-4 29.6 1.3s16.1 14.5 16.1 25.1v3.4c0 7.3 4.9 13.8 12.1 14.9 6.5 1 13.1 1.5 19.9 1.5s13.4-.5 19.9-1.5c7.2-1.1 12.1-7.6 12.1-14.9V492c0-10.6 6.9-19.8 16.1-25.1s20.4-6.6 29.6-1.3l2.9 1.7c6.3 3.6 14.4 2.6 19-3 3.7-4.6 7.1-9.4 10.1-14.5l2.4-4.2c2.8-5.1 5.3-10.3 7.4-15.8 2.6-6.8-.5-14.3-6.8-17.9l-3-1.7c-9.2-5.3-13.7-15.8-13.7-26.4s4.5-21.1 13.7-26.4l3-1.7zM472 384a40 40 0 1 1 80 0 40 40 0 1 1-80 0"/></svg>
+
+    </a>
+    SUML-PJATK 2025L
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/adrianstando/2025L-PJATK-SUML/tree/main" title="Przejdź do repozytorium" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strona główna
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Materiały z zajęć
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Materiały z zajęć
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../01-user-stories/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Zajęcia 01 - User stories
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Zajęcia 01 - User stories
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Materiały
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Materiały
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-user-stories/homework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Praca domowa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  
+  <span class="md-ellipsis">
+    Zajęcia 02 - Środowisko
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Zajęcia 02 - Środowisko
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Materiały
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Materiały
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Przykład
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="homework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Praca domowa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zadanie dodatkowe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../03-neural-networks/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Zajęcia 03 - Sieci neuronowe
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Zajęcia 03 - Sieci neuronowe
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Materiały
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Materiały
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2_1" id="__nav_2_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Przykład
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Przykład
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-neural-networks/mnist-10/notebook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Wstęp do sieci neuronowych
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-neural-networks/mnist-10/app_md/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aplikacja
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-neural-networks/homework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Praca domowa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-neural-networks/extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zadanie dodatkowe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../04-docker/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Zajęcia 04 - Docker
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Zajęcia 04 - Docker
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Materiały
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Materiały
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-docker/example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Przykład
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-docker/homework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Praca domowa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-docker/extra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Zadanie dodatkowe
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../05-ci-cd/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Zajęcia 05 - CI/CD
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Zajęcia 05 - CI/CD
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_2" id="__nav_2_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Materiały
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Materiały
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-ci-cd/example/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Przykład
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-ci-cd/homework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Praca domowa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../06-cloud/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Zajęcia 06 - Cloud
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Zajęcia 06 - Cloud
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6_2" id="__nav_2_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Materiały
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Materiały
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-cloud/homework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Praca domowa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../07-ml-tools/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Zajęcia 07 - ML Tools
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Zajęcia 07 - ML Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7_2" id="__nav_2_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Materiały
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Materiały
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7_2_1" id="__nav_2_7_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AutoML - przykład
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_7_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            AutoML - przykład
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-ml-tools/automl/notebook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AutoML - toy example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7_2_2" id="__nav_2_7_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    MLflow - przykład
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_7_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            MLflow - przykład
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-ml-tools/mlflow/notebook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MLflow - toy example
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-ml-tools/homework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Praca domowa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../08-presentation/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Zajęcia 08 - Prezentacje projektów
+    
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Zajęcia 08 - Prezentacje projektów
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Spis treści">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Spis treści
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#organizacja-pracy-w-projekcie-czesc-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizacja pracy w projekcie (część 2)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizacja pracy w projekcie (część 2)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#priorytetyzacja-backlogu-metoda-moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorytetyzacja backlogu – metoda MoSCoW
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#story-points-i-estymacja-pracy-w-sprincie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Story Points i estymacja pracy w sprincie
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jak-przydzielac-zadania" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jak przydzielać zadania?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-jak-wyglada-praca-w-scrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprint – jak wygląda praca w Scrum?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#role-w-scrum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role w Scrum
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#srodowiska-wirtualne-w-pythonie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Środowiska wirtualne w Pythonie
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Środowiska wirtualne w Pythonie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#po-co-uzywac-wirtualnych-srodowisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      Po co używać wirtualnych środowisk?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#popularne-narzedzia-do-zarzadzania-srodowiskami" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popularne narzędzia do zarządzania środowiskami
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Popularne narzędzia do zarządzania środowiskami">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jak-uzywac-venv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jak używać venv?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jak-uzywac-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jak używać Conda?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jak używać Conda?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#miniconda-vs-anaconda-jaka-roznica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Miniconda vs Anaconda – jaka różnica?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tworzenie-srodowiska-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tworzenie środowiska Conda
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jak-zarzadzac-zaleznosciami" class="md-nav__link">
+    <span class="md-ellipsis">
+      Jak zarządzać zależnościami?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jak zarządzać zależnościami?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirementstxt-pip" class="md-nav__link">
+    <span class="md-ellipsis">
+      requirements.txt (pip)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environmentyml-conda" class="md-nav__link">
+    <span class="md-ellipsis">
+      environment.yml (conda)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependency-hell-jak-conda-rozwiazuje-konflikty" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dependency Hell – jak Conda rozwiązuje konflikty?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#podsumowanie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Podsumowanie
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pierwsza-aplikacja-w-streamlit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pierwsza aplikacja w Streamlit
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="srodowisko-programistyczne">Środowisko programistyczne</h1>
+<h2 id="organizacja-pracy-w-projekcie-czesc-2">Organizacja pracy w projekcie (część 2)</h2>
+<h3 id="priorytetyzacja-backlogu-metoda-moscow">Priorytetyzacja backlogu – metoda MoSCoW</h3>
+<p>Metoda MoSCoW pomaga zespołom określić priorytet zadań, dzieląc je na cztery kategorie:</p>
+<ul>
+<li>
+<p>Must have (M) – absolutnie kluczowe wymagania, bez których projekt nie może zostać ukończony.</p>
+<p>Przykład: „System musi umożliwiać logowanie użytkowników.”</p>
+</li>
+<li>
+<p>Should have (S) – bardzo ważne, ale nie krytyczne; mogą być zrealizowane później, jeśli zabraknie czasu.</p>
+<p>Przykład: „Aplikacja powinna mieć możliwość logowania przez Google, ale może to być dodane po premierze.”</p>
+</li>
+<li>
+<p>Could have (C) – mile widziane dodatki, ale nie wpływają znacząco na główne funkcjonalności.</p>
+<p>Przykład: „Dodanie ciemnego motywu w interfejsie użytkownika.”</p>
+</li>
+<li>
+<p>Won't have (W) – funkcje, które nie będą realizowane w tym sprincie / wersji, ale mogą być brane pod uwagę w przyszłości.</p>
+<p>Przykład: „Obsługa wielu języków w pierwszej wersji aplikacji.”</p>
+</li>
+</ul>
+<h3 id="story-points-i-estymacja-pracy-w-sprincie">Story Points i estymacja pracy w sprincie</h3>
+<p>Story Points to jednostka miary złożoności i wysiłku wymaganego do wykonania zadania. Nie jest to liczba godzin, lecz względna trudność.</p>
+<h3 id="jak-przydzielac-zadania">Jak przydzielać zadania?</h3>
+<p>Podczas sprint planningu zespół przypisuje każdemu zadaniu Story Points, np. według skali Fibonacciego (1, 2, 3, 5, 8, 13...).</p>
+<ul>
+<li>
+<p>1-2 SP – proste zadania, np. „Dodanie nowego przycisku w UI.”</p>
+</li>
+<li>
+<p>3-5 SP – średnie zadania, np. „Zaimplementowanie formularza logowania.”</p>
+</li>
+<li>
+<p>8-13 SP – bardziej złożone zadania, np. „Stworzenie i integracja API do uwierzytelniania użytkowników.”</p>
+</li>
+</ul>
+<p>Uwaga!</p>
+<p>Każdy członek zespołu ma ograniczoną liczbę Story Points, które może zrealizować w jednym sprincie.
+Np. jeśli sprint trwa 2 tygodnie, a programista może średnio ukończyć 10 SP, to nie powinien dostawać więcej niż 10 SP na sprint.</p>
+<h3 id="sprint-jak-wyglada-praca-w-scrum">Sprint – jak wygląda praca w Scrum?</h3>
+<p><img alt="Scrum framework (źródło: www.scrum-institute.org)" src="img/scrum_framework_overview.jpg" /></p>
+<p>Sprint to ustalony czas (np. 1-2 tygodnie), w którym zespół realizuje zaplanowane zadania.</p>
+<p>Przebieg sprintu:</p>
+<ul>
+<li>
+<p>Sprint Planning – zaplanowanie zakresu pracy na sprint.</p>
+</li>
+<li>
+<p>Daily Stand-up – krótkie codzienne spotkania (15 min), każdy odpowiada na 3 pytania:</p>
+<ul>
+<li>
+<p>Co zrobiłem wczoraj?</p>
+</li>
+<li>
+<p>Co zrobię dzisiaj?</p>
+</li>
+<li>
+<p>Czy mam jakieś blokery?</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Sprint Review – podsumowanie prac, prezentacja wyników.</p>
+</li>
+<li>
+<p>Sprint Retrospective – analiza, co poszło dobrze, a co można poprawić.</p>
+</li>
+</ul>
+<p><img alt="Proces Scrum (źródło: www.scrum-institute.org)" src="img/scrum.jpg" /></p>
+<h3 id="role-w-scrum">Role w Scrum</h3>
+<ul>
+<li>
+<p>Product Owner – osoba odpowiedzialna za backlog i priorytetyzację zadań.</p>
+<p>Dba o to, by zespół dostarczał wartość biznesową.</p>
+<p>Przykład: decyduje, czy dodać funkcję „logowania przez Facebook” w tym sprincie czy w przyszłym.</p>
+</li>
+<li>
+<p>Scrum Master – wspiera zespół, pomaga usuwać blokery, pilnuje zasad Scrum.</p>
+<p>Przykład: jeśli zespół ma problem z dostępem do serwera, Scrum Master pomaga znaleźć rozwiązanie.</p>
+</li>
+<li>
+<p>Development Team – programiści, testerzy, DevOps – osoby realizujące zadania w backlogu.</p>
+</li>
+<li>
+<p>Stakeholder / Client – osoby, które mają wpływ na produkt (np. klient, szef, inwestorzy).</p>
+</li>
+</ul>
+<h2 id="srodowiska-wirtualne-w-pythonie">Środowiska wirtualne w Pythonie</h2>
+<p>Wirtualne środowiska w Pythonie pozwalają na izolację pakietów dla różnych projektów, dzięki czemu unikamy konfliktów zależności i problemów z różnymi wersjami bibliotek.</p>
+<h3 id="po-co-uzywac-wirtualnych-srodowisk">Po co używać wirtualnych środowisk?</h3>
+<ul>
+<li>
+<p>Izolacja projektów – Każdy projekt ma swoje własne zależności, dzięki czemu nie ma konfliktów między różnymi wersjami pakietów.</p>
+</li>
+<li>
+<p>Bezpieczeństwo – Można testować nowe pakiety bez ryzyka uszkodzenia globalnego środowiska.</p>
+</li>
+<li>Reprodukowalność – Można łatwo odtworzyć środowisko na innym komputerze.</li>
+<li>Elastyczność – Możliwość pracy z różnymi wersjami Pythona i bibliotek w tym samym systemie.</li>
+</ul>
+<h3 id="popularne-narzedzia-do-zarzadzania-srodowiskami">Popularne narzędzia do zarządzania środowiskami</h3>
+<table>
+<thead>
+<tr>
+<th>Narzędzie</th>
+<th>Opis</th>
+<th>Zalety</th>
+<th>Wady</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>venv</code></td>
+<td>Wbudowane narzędzie Pythona do tworzenia środowisk wirtualnych.</td>
+<td>✅ Wbudowane w Python, lekkie, proste</td>
+<td>❌ Brak zarządzania zależnościami i wersjami Pythona</td>
+</tr>
+<tr>
+<td><code>virtualenv</code></td>
+<td>Starsza alternatywa dla <code>venv</code>, działa z wieloma wersjami Pythona.</td>
+<td>✅ Szybsze niż <code>venv</code>, kompatybilne z <code>pip</code></td>
+<td>❌ Nie zarządza wersjami Pythona</td>
+</tr>
+<tr>
+<td><code>pyenv</code></td>
+<td>Narzędzie do zarządzania wersjami Pythona.</td>
+<td>✅ Pozwala używać wielu wersji Pythona</td>
+<td>❌ Nie zarządza pakietami</td>
+</tr>
+<tr>
+<td><code>conda</code></td>
+<td>Zaawansowane narzędzie do zarządzania środowiskami i pakietami (głównie dla Data Science).</td>
+<td>✅ Instalacja skompilowanych pakietów, zarządza wersjami Pythona</td>
+<td>❌ Wymaga pobrania Minicondy lub Anacondy</td>
+</tr>
+<tr>
+<td><code>poetry</code></td>
+<td>Nowoczesne narzędzie do zarządzania zależnościami i środowiskami.</td>
+<td>✅ Automatyczne zarządzanie pakietami, świetne do aplikacji</td>
+<td>❌ Może być nadmiarowe dla prostych projektów</td>
+</tr>
+</tbody>
+</table>
+<h4 id="jak-uzywac-venv">Jak używać venv?</h4>
+<p>Tworzenie nowego środowiska:</p>
+<div class="highlight"><pre><span></span><code>python -m venv my_env
+</code></pre></div>
+<p>Aktywacja środowiska:</p>
+<div class="highlight"><pre><span></span><code>source my_env/bin/activate
+</code></pre></div>
+<p>Dezaktywacja środowiska:</p>
+<div class="highlight"><pre><span></span><code>deactivate
+</code></pre></div>
+<p>Instalowanie pakietów:</p>
+<div class="highlight"><pre><span></span><code>pip install numpy pandas
+</code></pre></div>
+<p>Zapisywanie zależności do pliku (requirements.txt)</p>
+<div class="highlight"><pre><span></span><code>pip list --format=freeze &gt; requirements.txt
+</code></pre></div>
+<p>Odtworzenie środowiska na innym komputerze:</p>
+<div class="highlight"><pre><span></span><code>pip install -r requirements.txt
+</code></pre></div>
+<h4 id="jak-uzywac-conda">Jak używać Conda?</h4>
+<h5 id="miniconda-vs-anaconda-jaka-roznica">Miniconda vs Anaconda – jaka różnica?</h5>
+<table>
+<thead>
+<tr>
+<th>Cecha</th>
+<th>Miniconda</th>
+<th>Anaconda</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Rozmiar</strong></td>
+<td>🔹 Małe (~50MB)</td>
+<td>🔹 Duże (~3GB)</td>
+</tr>
+<tr>
+<td><strong>Domyślne pakiety</strong></td>
+<td>🚫 Brak pakietów</td>
+<td>✅ Zawiera pakiety (numpy, pandas, Jupyter itp.)</td>
+</tr>
+<tr>
+<td><strong>Elastyczność</strong></td>
+<td>✅ Instalujesz tylko to, czego potrzebujesz</td>
+<td>❌ Instaluje się dużo zbędnych rzeczy</td>
+</tr>
+<tr>
+<td><strong>Licencja</strong></td>
+<td>✅ Darmowa (w tym do użytku komercyjnego)</td>
+<td>❌ Wymaga licencji komercyjnej dla firm</td>
+</tr>
+</tbody>
+</table>
+<p>📌 Wniosek: Jeśli chcesz pełną kontrolę i minimalny rozmiar – używaj Minicondy. Jeśli chcesz gotowe środowisko do Data Science – wybierz Anacondę.</p>
+<h5 id="tworzenie-srodowiska-conda">Tworzenie środowiska Conda</h5>
+<p>Tworzenie nowego środowiska:</p>
+<div class="highlight"><pre><span></span><code>conda create -n my_env python=3.9
+</code></pre></div>
+<p>Aktywacja środowiska:</p>
+<div class="highlight"><pre><span></span><code>conda activate my_env
+</code></pre></div>
+<p>Dezaktywacja środowiska:</p>
+<div class="highlight"><pre><span></span><code>conda deactivate
+</code></pre></div>
+<p>Usunięcie środowiska:</p>
+<div class="highlight"><pre><span></span><code>conda remove -n my_env --all
+</code></pre></div>
+<p>Instalowanie pakietów:</p>
+<div class="highlight"><pre><span></span><code>conda install numpy pandas
+</code></pre></div>
+<p>Dlaczego używać conda install zamiast pip install?</p>
+<ul>
+<li>Conda pobiera skompilowane pakiety → działa szybciej i eliminuje problemy z zależnościami.</li>
+<li>Może automatycznie dopasować wersje zależności (pip nie robi tego tak dobrze).</li>
+<li>pip instaluje pakiety z PyPI, a conda z własnych repozytoriów (np. conda-forge), co czasem prowadzi do konfliktów.</li>
+</ul>
+<h4 id="jak-zarzadzac-zaleznosciami">Jak zarządzać zależnościami?</h4>
+<h5 id="requirementstxt-pip">requirements.txt (pip)</h5>
+<p>📌 Plik używany przez pip, zawiera listę pakietów do zainstalowania.</p>
+<p>Przykład:</p>
+<div class="highlight"><pre><span></span><code>numpy==1.23.0
+pandas&gt;=1.5,&lt;2.0
+scikit-learn
+</code></pre></div>
+<h5 id="environmentyml-conda">environment.yml (conda)</h5>
+<p>📌 Plik konfiguracyjny do odtwarzania środowisk Conda.</p>
+<div class="highlight"><pre><span></span><code>name: my_env
+dependencies:
+  - python=3.9
+  - numpy=1.23.0
+  - pandas&gt;=1.5,&lt;2.0
+  - pip
+  - pip:
+      - scikit-learn
+</code></pre></div>
+<p>Tworzenie środowiska z pliku:</p>
+<div class="highlight"><pre><span></span><code>conda env create -f environment.yml
+</code></pre></div>
+<p>Eksportowanie aktualnego środowiska do pliku:</p>
+<div class="highlight"><pre><span></span><code>conda env export &gt; environment.yml
+</code></pre></div>
+<h5 id="dependency-hell-jak-conda-rozwiazuje-konflikty">Dependency Hell – jak Conda rozwiązuje konflikty?</h5>
+<p>Conda automatycznie sprawdza zgodność wersji pakietów i jeśli nowy pakiet wymaga innej wersji już zainstalowanego pakietu, może go zaktualizować, obniżyć wersję lub usunąć.</p>
+<p>Generowanie "planu działania" poprzez conda:</p>
+<div class="highlight"><pre><span></span><code>conda install tensorflow --dry-run
+</code></pre></div>
+<h5 id="podsumowanie">Podsumowanie</h5>
+<ul>
+<li>
+<p>venv – dobre do prostych projektów.</p>
+</li>
+<li>
+<p>Conda – najlepsze dla Data Science i ML.</p>
+</li>
+<li>
+<p>pyenv – jeśli musisz pracować z wieloma wersjami Pythona.</p>
+</li>
+<li>
+<p>poetry – nowoczesne zarządzanie pakietami dla aplikacji.</p>
+</li>
+</ul>
+<h2 id="pierwsza-aplikacja-w-streamlit">Pierwsza aplikacja w Streamlit</h2>
+<ul>
+<li>
+<p>Przykładowa aplikacja znajduje się w folderze <code>sentiment_analysis</code>.</p>
+</li>
+<li>
+<p>Dokumentacja pakietu, elementów oraz przykładowe aplikacje dostępne na: <a href="https://docs.streamlit.io/">https://docs.streamlit.io/</a></p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Stopka" >
+        
+          
+          <a href="../01-user-stories/homework/" class="md-footer__link md-footer__link--prev" aria-label="Poprzednia strona: Praca domowa">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Poprzednia strona
+              </span>
+              <div class="md-ellipsis">
+                Praca domowa
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="example/" class="md-footer__link md-footer__link--next" aria-label="Następna strona: Przykład">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Następna strona
+              </span>
+              <div class="md-ellipsis">
+                Przykład
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Adrian Stańdo
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["search.suggest", "search.highlight", "navigation.sections", "navigation.tracking", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.indexes", "navigation.footer", "content.code.select", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Skopiowano do schowka", "clipboard.copy": "Kopiuj do schowka", "search.result.more.one": "1 wi\u0119cej na tej stronie", "search.result.more.other": "# wi\u0119cej na tej stronie", "search.result.none": "Brak wynik\u00f3w wyszukiwania", "search.result.one": "Wyniki wyszukiwania: 1", "search.result.other": "Wyniki wyszukiwania: #", "search.result.placeholder": "Zacznij pisa\u0107, aby szuka\u0107", "search.result.term.missing": "Brak", "select.version": "Wybierz wersj\u0119"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
