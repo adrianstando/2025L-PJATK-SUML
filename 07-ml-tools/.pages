@@ -2,4 +2,6 @@ title: Zajęcia 07 - ML Tools
 nav:
     - Narzędzia ML: README.md
     - Materiały:
+        - AutoML: automl
+        - MLflow: mlflow
         - Praca domowa: homework.md

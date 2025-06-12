@@ -37,7 +37,7 @@ W trakcie zajęć będą przedstawiane nowe technologie wraz z prostymi przykła
 | 26.04. | 4           | [Docker](04-docker/README.md) | - Wprowadzenie do Dockera: pisanie Dockerfile, uruchamianie aplikacji w kontenerze | [**Podłączenie modelu AI do aplikacji**](03-neural-networks/homework.md) |
 | 17.05. | 5           | [CI/CD](05-ci-cd/README.md) | - Wprowadzenie do CI/CD <br> - Konfiguracja GitHub Actions | [**Konteneryzcja aplikacji (docker)**](04-docker/homework.md) |
 | 31.05. | 6           | [Uruchamianie aplikacji w chmurze](06-cloud/README.md) | - Uruchamianie przykładowej aplikacji (kontenera) na Azure | [**Stworzenie pipeline'ów CI/CD**](05-ci-cd/homework.md) |
-| 14.06. | 7           | [Narzędzia ML](07-ml-tools/README.md) | - Wprowadzenie do MLFlow <br> - Narzędzia AutoML w Pythonie  | [**Aplikacja działająca w środowisku chmurowym**](06-cloud/homework.md) |
+| 14.06. | 7           | [Narzędzia ML](07-ml-tools/README.md) | - Wprowadzenie do MLflow <br> - Wprowadzenie do AutoML w Pythonie <br> - Wprowadzenie do kwantyzacji sieci neuronowych <br> - Uruchamianie modeli LLM z ollama  | [**Aplikacja działająca w środowisku chmurowym**](06-cloud/homework.md) |
 | 28.06. | 8           | Prezentacje i ocena | - Prezentacja projektów, ocena i feedback | [**Prezentacja**](07-ml-tools/homework.md) |
 
 
